@@ -113,6 +113,7 @@ body {
 }
 ul, ol {
   list-style: none;
+  padding: 0; /*Removing default styles*/
 }
 
 a {
@@ -133,7 +134,65 @@ h2 {
 h3 {
   font-size: 1.2em;
 }
+/*----------------------------------------
+              MOBILE STYLES
+-----------------------------------------*/
+/* Header/Nav*/
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
 
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 10px;
+}
+
+/*Hero area*/
+.hero-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*About section*/
+#about, .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+/*in-action/video section*/
+#in-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+/*Sponsor section*/
+#sponsor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+/*Aside/signup*/
+aside, .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
 
 
 
