@@ -179,7 +179,7 @@ nav ul li {
 }
 
 /*Sponsor section*/
-#sponsor {
+#sponsor, .sponsor-tiles {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,6 +192,32 @@ aside, .form {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+}
+
+/*Footer*/
+footer, .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.contact, .social, .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.social-icons{
+   flex-flow: row wrap;
+ }
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.footer-links li {
+  padding: 10px;
 }
 
 
@@ -294,8 +320,40 @@ aside, .form {
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+   @media only screen and (min-width: 768px) {
+  /*--------------------------------------------------------------------------
+                              Tablet / Desktop
+  ---------------------------------------------------------------------------*/
+/*header / nav */
+  header{
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+/* hero area */
+
+/* about area */
+#about {
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+#about .content-wrapper {
+  width: 30%;
+}
+/*sponsor section*/
+.sponsor-tiles {
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+/*Footer*/
+.footer-content {
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+
+
 }
 
 @media print,
