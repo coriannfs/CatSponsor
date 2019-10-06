@@ -330,27 +330,43 @@ footer, .footer-content {
     justify-content: space-between;
   }
 
-/* hero area */
+  /* hero area */
 
-/* about area */
-#about {
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-#about .content-wrapper {
-  width: 30%;
-}
-/*sponsor section*/
-.sponsor-tiles {
-  justify-content: space-between;
-  flex-flow: row wrap;
-}
+  /* about area */
+  #about {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  #about .content-wrapper {
+    width: 30%;
+  }
+  /*sponsor section*/
+  .sponsor-tiles {
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
 
-/*Footer*/
-.footer-content {
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
+  /*Footer*/
+  footer {
+    align-items: center;
+  }
+
+  .footer-content {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  .info-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-links {
+      position:absolute;
+      right: 20px;
+  }
 
 
 
