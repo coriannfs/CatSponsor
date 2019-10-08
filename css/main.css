@@ -133,6 +133,7 @@ h2 {
 
 h3 {
   font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif;
 }
 /*----------------------------------------
               MOBILE STYLES
@@ -190,6 +191,7 @@ nav ul li {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+  text-align: center;
 }
 
 /*Sponsor section*/
@@ -198,6 +200,18 @@ nav ul li {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+}
+#sponsor h2  {
+  text-align:center;
+  font-size: 1.45em;
+  font-weight: bold;
+  font-family: "montserrat", sans-serif;
+}
+.sponsor-tiles {
+  width: 100%;
+}
+.sponsor-tiles .price{
+  font-weight: normal;
 }
 
 /*Aside/signup*/
