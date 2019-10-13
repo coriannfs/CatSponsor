@@ -120,6 +120,9 @@ a {
   text-decoration: none;
   color: #C58F39;
 }
+header a {
+  color: black;
+}
 
 h1 {
   font-size: 2.5em;
@@ -164,25 +167,28 @@ nav ul li {
 
 /*Hero area*/
 .hero-area {
-  padding-top: 200px;
-  height: 650px;
+  height: 100vh;
   display: flex;
   justify-content: center;
 }
 .hero-area h1 {
   width: 80%;
   text-align: center;
+  padding-top: 200px;
 }
 /*About section*/
-
+#about {
+    background-color: #fff;
+}
 #about, .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
 }
-.content-wrapper {
+#about .content-wrapper {
   width: 80%;
+  margin: 0 auto;
 }
 
 /*in-action/video section*/
@@ -192,6 +198,7 @@ nav ul li {
   align-items: center;
   flex-flow: column wrap;
   text-align: center;
+  background-color: #FFD289;
 }
 
 /*Sponsor section*/
@@ -200,6 +207,10 @@ nav ul li {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+}
+#sponsor {
+  width: 85%;
+  margin: 0 auto;
 }
 #sponsor h2  {
   text-align:center;
@@ -228,6 +239,9 @@ footer, .footer-content {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+}
+footer {
+  background-color: #FFD289;
 }
 .contact, .social, .social-icons {
   display: flex;
@@ -349,6 +363,7 @@ footer, .footer-content {
   header{
     flex-flow: row wrap;
     justify-content: space-between;
+    height: 100px;
   }
 
   /* hero area */
@@ -357,14 +372,21 @@ footer, .footer-content {
   #about {
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: baseline;
   }
   #about .content-wrapper {
-    width: 30%;
+    width: 28%;
+
   }
   /*sponsor section*/
   .sponsor-tiles {
     justify-content: space-between;
     flex-flow: row wrap;
+
+  }
+  #sponsor p {
+    width: 75%;
+
   }
 
   /*Footer*/
