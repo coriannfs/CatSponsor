@@ -118,10 +118,13 @@ ul, ol {
 
 a {
   text-decoration: none;
-  color: #C58F39;
+  color:black;
 }
 header a {
-  color: black;
+  font-size: 1.4em;
+}
+ a:hover {
+  color: #C58F39;
 }
 
 h1 {
@@ -153,8 +156,11 @@ header {
   align-items: center;
   flex-flow: column wrap;
   background-color: #FFD289;
+  padding-top: 10px;
 }
-
+ header img {
+   width: 312px;
+ }
 nav ul {
   display: flex;
   justify-content: center;
@@ -170,15 +176,20 @@ nav ul li {
   height: 100vh;
   display: flex;
   justify-content: center;
+  background: url("../img/hero.jpg") center no-repeat;
+  background-size: cover;
 }
 .hero-area h1 {
   width: 80%;
   text-align: center;
   padding-top: 200px;
+  color: #fff;
+  font-weight: 100;
 }
 /*About section*/
 #about {
     background-color: #fff;
+    padding: 60px 0 80px 0;
 }
 #about, .content-wrapper {
   display: flex;
@@ -189,8 +200,12 @@ nav ul li {
 #about .content-wrapper {
   width: 80%;
   margin: 0 auto;
-}
 
+}
+ #about img {
+   width: 76px;
+   padding: 20px 0 20px 0;
+ }
 /*in-action/video section*/
 #in-action {
   display: flex;
@@ -363,9 +378,11 @@ footer {
   header{
     flex-flow: row wrap;
     justify-content: space-between;
-    height: 100px;
+    height: 110px;
   }
-
+  header img {
+    padding-left: 30px;
+  }
   /* hero area */
 
   /* about area */
