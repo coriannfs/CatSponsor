@@ -103,7 +103,7 @@ textarea {
    ========================================================================== */
 /* General Styles */
 html {
-  font-size: 14px;
+  font-size: 16px;
 }
 body {
   font-family: 'Montserrat', sans-serif;
@@ -140,6 +140,28 @@ h2 {
 h3 {
   font-size: 1.2em;
   font-family: 'Montserrat', sans-serif;
+}
+
+aside .form input[name=email] {
+  border: none;
+  height: 32px;
+  padding: 10px 30px 10px 30px;
+  margin: 10px;
+}
+.form input[type=button] {
+  font-size: 1.25em;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  margin: 10px;
+  background-color: #FFD289;
+  transition: 0.3s ease;
+}
+.form input[type=button]:hover {
+  transition: 0.3s ease;
+  background-color: #FFE1B0;
+}
+.form input[type=button]:active {
+  background-color: #C58F39;
 }
 /*----------------------------------------
               MOBILE STYLES
@@ -234,6 +256,9 @@ nav ul li {
   font-weight: bold;
   font-family: "montserrat", sans-serif;
 }
+#sponsor p {
+  padding: 15px 0 15px 0;
+}
 .sponsor-tiles {
   width: 100%;
 }
@@ -253,6 +278,9 @@ nav ul li {
 }
 
 /*Aside/signup*/
+aside {
+  padding: 60px 0 100px 0;
+}
 aside, .form {
   display: flex;
   justify-content: center;
