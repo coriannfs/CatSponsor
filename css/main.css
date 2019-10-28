@@ -133,12 +133,12 @@ h1 {
 }
 
 h2 {
-  font-size: 1.75em;
+  font-size: 2em;
   font-family: 'Coiny', cursive;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -147,6 +147,7 @@ aside .form input[name=email] {
   height: 32px;
   padding: 10px 30px 10px 30px;
   margin: 10px;
+  text-align: center;
 }
 .form input[type=button] {
   font-size: 1.25em;
@@ -179,6 +180,7 @@ header {
   flex-flow: column wrap;
   background-color: #FFD289;
   padding-top: 10px;
+  z-index: 2;
 }
  header img {
    width: 312px;
@@ -236,6 +238,27 @@ nav ul li {
   flex-flow: column wrap;
   text-align: center;
   background-color: #FFD289;
+  padding: 80px 40px 50px 40px;
+}
+#in-action .content-wrapper {
+  width: 100%;
+}
+.action-video {
+  width: 100%;
+  max-width: 800px;
+  position:relative;
+  padding-bottom: 50%;
+  padding-top: 25px;
+  height: 0;
+  overflow: hidden;
+}
+.action-video iframe {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 560px;
+  margin: 0 auto;
 }
 
 /*Sponsor section*/
@@ -297,6 +320,7 @@ footer, .footer-content {
 }
 footer {
   background-color: #FFD289;
+  padding-top: 40px;
 }
 .contact, .social, .social-icons {
   display: flex;
@@ -304,8 +328,16 @@ footer {
   align-items: center;
   flex-flow: column wrap;
 }
+.contact p {
+  font-size: 1.2em;
+}
 .social-icons{
    flex-flow: row wrap;
+ }
+ footer i {
+   font-size: 3.5em;
+   padding: 5px 10px 10px 10px;
+   color: #C58F39;
  }
 .footer-links {
   display: flex;
@@ -424,6 +456,9 @@ footer {
   header img {
     padding-left: 30px;
   }
+  nav {
+    padding-right: 20px;
+  }
   /* hero area */
 
   /* about area */
@@ -435,6 +470,10 @@ footer {
   #about .content-wrapper {
     width: 28%;
 
+  }
+  /* In Action*/
+  .action-video {
+    padding-bottom: 40%;
   }
   /*sponsor section*/
   #sponsor {
@@ -459,12 +498,15 @@ footer {
   /*Footer*/
   footer {
     align-items: center;
+    padding-bottom: 25px;
   }
 
   .footer-content {
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items:baseline;
     width: 80%;
+    padding: 120px 50px 120px 50px;
   }
 
   .info-links {
